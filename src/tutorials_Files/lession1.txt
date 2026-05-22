@@ -1,0 +1,171 @@
+
+
+// the way java works
+
+// 1. source code
+// 2. compile (javac - compiler)
+// 3. output
+// 4. virtual machine
+
+//chapter 1 - page 5
+
+//declare a variable named size and give value of 27
+
+//int size = 27;
+
+//if x(value of 22) is less than 15 , tell dog to bark 8 times
+
+//Dog myDog = new Dog(size);
+//int x = 22;
+//if (x < 15) myDog.bark(8);
+
+//print out hello, in command line
+
+//System.out.print("Hello");
+
+// code structure in java
+
+// flow of structure
+
+// source file -> class defination -> method 1 & method 2 -> statement's
+//example
+
+//source file
+// lession1.java
+
+//class defination - this represent a piece of of program
+public class Dog {
+
+}
+
+//methods - each class has one or more methods
+//in Dog class , bark method hold instructions for how should dog bark
+//methods declared inside class
+
+public class Dog {
+ void bark(){
+
+ }
+}
+
+//Method code is basically a set of statements
+//method kind of like a function or procedure
+
+
+//Every Java application has to have at least one class, and at least one
+//main method (not one main per class; just one main per application).
+
+
+// Anatomy of a class
+
+public class MyFirstApp {
+
+     public static void main (String[] args) {
+
+        System.out.print("I Rule!");
+
+    }
+}
+
+defination of each
+
+public - means everyone can access it
+class - this is a class
+MyFirstApp - name of class
+{} - code inside this will execute
+void - the return type: void means there's no return value
+main - name of method
+(String[] args) - Arguments to the method, this method must be given an array of strings and the array will be called "args"
+System.out.print() - this print to standard output (defaults to command line)
+"I Rule!" - the string want to print
+; - every statement ends with this semicolon
+
+
+Writing a class with a main()
+
+The main() method is where your program starts running.
+No matter how big your program is (in other words, no matter how many classesyour program uses), there’s got to be a main() method to get the ball rolling
+
+
+inside main() methods you can
+make statements
+make loops
+make branching
+
+
+loop -The key to a loop is the conditional test. In Java, a conditional test is an expression that results in a boolean value—in other words, something that is either true or false
+
+< - less than
+
+> - greater than
+
+== - equality
+
+example
+
+int x = 4;
+
+while(x == 4) {
+  inside this code will run
+}
+
+while(x > 5) {
+ inside this code will not run
+}
+
+
+conditional branching
+if test is basically the same as the boolean test in a while loop—except instead of saying, “while there’s still chocolate,” you’ll say, “if there’s still chocolate...”
+
+int x = 20;
+
+if (x == 20) {
+  the code will run
+} else {
+  if condition is not true then this code will run
+}
+
+
+System.out.print vs. System.out.println
+
+System.out.println inserts a newline (think of println as printnewline)
+
+System.out.print keeps printing to the same line. If you want each thing you print out to be on its own line, use println. If you want everything to stick together on one line, use print.
+
+example
+
+System.out.print("Hello" , "World");
+output -> Hello World
+
+System.out.println("Hello" , "World");
+output -> Hello
+          World
+
+task - how you would code that classic children’s favorite, “10 green bottles.”
+
+ans.
+
+later add
+
+
+page - 20
+
+ans.
+
+class Shufflel {
+public static void main(String[] args){
+int x =3;
+while(x >0){
+if (x > 2) {
+System.out.print("a");
+x = x - 1;
+System.out.print("-");
+}
+if (x ==2) {
+System.out.print("b c");}
+if (x == 1) {
+System.out.print("d");
+x = x -1;}
+}
+}
+}
